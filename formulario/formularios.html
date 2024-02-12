@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title> Formulários </title>
+<meta charset="utf-8">
+</head>
+<body>
+ 
+<form action="formularioenviado.html" method="post">
+
+<!-- Formulário com legendas -->
+<!-- Fieldset = cria grupo para determinado campo -->
+<fieldset>
+<legend> Informações pessoais </legend>
+
+<!-- (<br>) = quebra de linha -->
+<!-- Required = campo requerido -->
+<!-- Disabled = desabilita um campo -->
+Nome: <br> 
+<input type="text" name="nome" required autofocus> <br>
+Senha: <br>
+<input type="password" name="senha"> <br>
+Email: <br>
+<!-- autocomplete = dá opções de email -->
+<input type="email" name="email" autocomplete="on" placeholder="seuemail@gmail.com"  required> <br>
+Imagem: <br><br>
+<!-- Para selecionar arquivos -->
+<input type="file" name="imagem" accept=".mp4,.png" multiple> <br><br>
+<!-- Atributo invisível, parâmetro -->
+<input type="hidden" name="id"> <br><br>
+
+URL: <br>
+<input type="url" name="site"> <br>
+Search: <br>
+<input type="search" name="pesquisa"> <br>
+Telefone: <br>
+<input type="tel" name="telefone"> <br>
+
+Time: <br>
+<!-- radio = formulário com opções em bolinhas-->
+<input type="radio" name="time" value="vasco"> Vasco <br>
+<input type="radio" name="time" value="botafogo"> Botafogo <br>
+<input type="radio" name="time" value="fluminense"> Fluminense <br>
+<input type="radio" name="time" value="flamengo"> Flamengo <br>
+<br>
+Cores: <br>
+<!-- checkbox = formulário com opções em quadrados, pode escolher vários-->
+<input type="checkbox" name="cores" value="verde"> Verde <br>
+<input type="checkbox" name="cores" value="azul"> Azul <br>
+<input type="checkbox" name="cores" value="preto"> Preto <br> 
+<input type="checkbox" name="cores" value="rosa"> Rosa <br> <br>
+
+Quantidade: <br>
+<!-- campo de entrada para um valor numérico, step = intervalo -->
+<input type="number" name="quantidade" min="0" max="500" step="10">
+<br><br>
+<input type="range" name="quantidade" min="0" max="100" step="2"> <br><br>
+
+Cor: <br>
+<!-- campo de cores -->
+<input type="color" name="cor">
+
+<!-- Nova forma de escrever o formulário
+    Criação do formulário data com parágrafo e label --> 
+<p>
+   <label for="input-data">Data</label> 
+   <input id="input-data" type="date" name="data"/> 
+</p>
+<!-- Criação data-hora -->
+<p>
+    <label for="input-data-hora">Data/hora</label> 
+    <input id="input-data-hora" type="datetime-local" name="data-hora"/> 
+</p>
+<!-- Criação semana -->
+<p>
+    <label for="input-semana">Semana</label> 
+    <input id="input-semana" type="week" name="semana"/> 
+</p>
+<p>
+<!-- Outro jeito de utilizar checkbox -->
+    <label for="termos">
+    <input id="termos" type="checkbox" name="termos"/> Li e aceito os termos de uso
+    </label>
+</p>
+<p>
+    <input type="submit" value="Botão de envio"/>
+    <input type="reset" value="Limpar"/>
+</p>
+<p>
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+</p>
+<p>
+<!-- Selecionando opções -->
+    <label for="opcoes">Opções</label>
+    <select id="opcoes" name="opcoes">
+    <option value="1">Opção 1</option>
+    <option value="2">Opção 2</option>
+    <option value="3">Opção 3</option>
+    </select>
+</p>
+
+<br>
+<button type="submit">Enviar</button>
+</fieldset>
+</form>
+</body>
+</html>
