@@ -2,6 +2,6 @@
 ***
 ### Aplicações básicas utilizando HTML 
 
-* O HTML é uma linguagem de marcação, utilizada para a construção de páginas na web.
-* Esse repositório possui aplicações simples do HTML na prática.
+* O __HTML__ é uma linguagem de marcação, utilizada para a construção de páginas na web.
+* Esse repositório possui aplicações simples do __HTML__ na prática.
 
